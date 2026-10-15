@@ -1,0 +1,24 @@
+# Credentials and host artefacts are never committed. The values live in wp-config.php on
+# the live host; key names are documented in the private site-credentials repo.
+wp-config.php
+.htaccess.phpupgrader.*
+.ftpquota
+error_log
+debug.log
+web.config
+wp-content/ai1wm-backups/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup*/
+wp-content/updraft/
+node_modules/
+.DS_Store
+
+# Added 2026-11-05 before making the repo public: logs, dumps and env files never get committed
+.env
+.env.*
+*.log
+wp-content/uploads/wc-logs/
+*.sql
+*.sql.gz
+*.wpress

@@ -1,0 +1,143 @@
+
+/*Numberd Indicators*/
+
+.carousel-indicator-numbered .carousel-indicators li {
+	border-radius: 0;
+	padding: 0 8px;
+	width: auto;
+	height: auto;
+	line-height: 20px;
+	background: #ddd;
+	color: #999;
+	border: none;
+	text-indent: 0;
+	margin: 0;
+}
+.carousel-indicator-numbered .carousel-indicators li.active {
+	width: auto;
+	height: auto;
+	color: #fff;
+	background: #3276b1;
+	border-color: none;
+}
+/*Zoom In Effect*/
+.vertical-slider .carousel-inner {
+  height: 100%;
+}
+.vertical-slider .carousel-inner > .item {
+  -webkit-transition: .6s ease-in-out top;
+  -o-transition: .6s ease-in-out top;
+  transition: .6s ease-in-out top;
+}
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .vertical-slider .carousel-inner > .item {
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    -o-transition: -o-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+  }
+  .vertical-slider .carousel-inner > .item.next,
+  .vertical-slider .carousel-inner > .item.active.right {
+    top: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  .vertical-slider .carousel-inner > .item.prev,
+  .vertical-slider .carousel-inner > .item.active.left {
+    top: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  .vertical-slider .carousel-inner > .item.next.left,
+  .vertical-slider .carousel-inner > .item.prev.right,
+  .vertical-slider .carousel-inner > .item.active {
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.vertical-slider .carousel-inner > .active {
+  top: 0;
+}
+.vertical-slider .carousel-inner > .next,
+.vertical-slider .carousel-inner > .prev {
+  top: 0;
+  height: 100%;
+  width: auto;
+}
+.vertical-slider .carousel-inner > .next {
+  left: 0;
+  top: 100%;
+}
+.vertical-slider .carousel-inner > .prev {
+  left: 0;
+  top: -100%
+}
+.vertical-slider .carousel-inner > .next.left,
+.vertical-slider .carousel-inner > .prev.right {
+  top: 0;
+}
+.vertical-slider .carousel-inner > .active.left {
+  left: 0;
+  top: -100%;
+}
+.vertical-slider .carousel-inner > .active.right {
+  left: 0;
+  top: 100%;
+}
+
+/*Fade Effect*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}

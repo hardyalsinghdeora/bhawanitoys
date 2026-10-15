@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'Lato-thin';
+    src: url('font/Lato-Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+input, textarea, select {
+    font-size: 12px !important;
+}
+.main-title {
+    color: #333333;
+    font-family: 'Lato-thin', sans-serif;
+    font-size: 100px;
+    font-weight: 100;
+    padding: 0px;
+    margin: 0px;
+}
+.main-title span {
+}
+.nav-menu {
+    margin-top: 12px;       
+    max-height: inherit !important;
+}
+.navbar-collapse {
+    padding-right: 0px !important; 
+    padding-left: 0px !important; 
+}
+.nav {
+    float: none;
+    table-layout: fixed;
+    display: table;
+    width: 100%;
+    list-style: none;
+}
+.nav li {
+    float: none;
+    display: table-cell;
+    list-style: none;
+    text-align:center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.nav li:first-child a {
+    background: #f11837;
+}
+.nav li:nth-child(2) a {
+    background: #ff6408;
+}
+.nav li:nth-child(3) a {
+    background: #fcae01;
+}
+.nav li:nth-child(4) a {
+    background: #56b621;
+}
+.nav li:nth-child(5) a {
+    background: #27ca80;
+}
+.nav li:nth-child(6) a {
+    background: #1a8de6;
+}
+.nav li.current_page_item a, .nav li:hover a {
+    background-color: #282828 !important;
+}
+.nav li a {
+    display:block;
+    color: #FFFFFF;
+    padding:25px 0;    
+    font-size: 20px;
+}
+.sub-menu {
+    display: none;
+    background: #343a40 !important;
+    position: absolute;
+    padding: 0;
+    list-style: none;
+    width: 200px;
+    z-index: 9999;
+}
+.sub-menu a {
+    color: #FFFFFF;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.sub-menu a:hover {
+    background-color: #EEEEEE;
+    color: #FFFFFF;
+}
+.nav li:hover .sub-menu {
+    display: inline;
+}
+.sub-menu li:hover a {
+    color: #333333;
+}
+.banner {
+/*
+    border-top: 5px solid #749CD0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 0 5px 0;
+*/
+}
+.storefront-breadcrumb {
+    margin: 0pc !important;
+}
+.welcome_box {
+    background: #2f3333;
+    color: #FFF;
+    padding: 25px 0; 
+}
+.welcome_box h1, .welcome_box p {
+    text-align: center;
+}
+.product_container {
+    background-image: url('../images/parallax_img.jpg');
+    padding: 50px 25px 25px;
+}
+.products {
+    position: relative;
+    padding-bottom: 25px;
+}
+.products h1, .products h2 {
+    position: absolute;
+    bottom: 15px;
+    background: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    font-size: 30px !important;
+    text-align: center;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.custom_banners .banner-wrap:hover .title_div {
+    transform:rotate3d(0,1,0,-180deg);
+    -webkit-transform:rotate3d(0,1,0,-180deg);
+}
+.custom_banners .banner-wrap .title_div {
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:10;
+}
+
+.slogan {
+    background: #F9F9F9;
+    border-top: 10px solid #FFFFFF;
+    border-bottom: 10px solid #FFFFFF;
+    padding: 35px 0 36px 0;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman" ,Times,serif;
+    line-height: 24px;
+    color: #959595;
+}
+.slogan h1 span {
+    border-bottom: 1px solid #333;
+}
+.services h1 {
+    margin: 0px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    margin-bottom: 0px;
+}
+.service-div {
+    padding: 10px 10px;
+}
+.service-div img {
+    width: 100% !important;
+}
+.service-div a:hover {
+    text-decoration: none;
+}
+h1.landscaping-title {
+    background: #A0CF67;
+}
+h1.pressure-washing-title {
+    background: #759DD1;
+}
+h1.roof-cleaning-title {
+    background: #F9A25F;
+}
+h1.house-cleaning-title {
+    background: #9C7DB9;
+}
+h1.maid-service-title {
+    background: #794400;
+}
+h1.enquiry-service-title {
+    background: #75745D;
+}
+.enquiries {
+    border-top: 1px solid #f0f0f0;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+.enquiry-form {
+    background: #FFFFFF;
+    border: #1A8DE6 3px solid;
+    padding: 30px 25px 34px 25px;
+}
+.enquiry-form textbox {
+    height: 154px !important;
+}
+.wpcf7-response-output {
+    color: #333;
+}
+.service-block {
+    /*border: 1px solid #CCCCCC;
+    background: #FFFFFF;
+    border-radius: 5px;*/
+    padding-top: 20px;
+    border-top: 1px solid #CCCCCC;
+}
+.footer {
+    background-color: #f2f2f2;
+    border-top: 15px solid #FFF;
+    color: #888;
+    font-size: 12px;
+    padding: 15px;
+}
+.footer-menu {
+    text-align: right;
+}
+.footer-menu ul {
+    float: right;
+}
+.footer-menu li:first-child {
+    border: 0px none;
+}
+.footer-menu li {
+    float: left;
+    list-style: none;
+    padding: 0px 5px;
+    border-left: 1px solid #CCCCCC;
+}
+.icon-bar {
+    float: left;
+    padding-top: 25px;
+    width: 50px;
+}
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px 16px 16px 14px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+.icon-bar a:hover {
+    background-color: #000;
+}
+.icon-bar .facebook {
+    background: #3B5998;
+    color: white;
+}
+.icon-bar .instagram {
+    background: #E64980;
+    color: white;
+}
+.storefront-sorting {
+    display: none;
+}
+.storefront-sorting select {
+    color: #333;
+}
+ul.products img {
+    margin: 0px !important;
+    width: 100%;
+    height: 100%;
+}
+.welcome_box .panel {
+	background: #2f3333;
+}
+@media only screen and (max-width: 600px) {
+  .nav li a {
+    font-size: 16px !important;
+	text-transform: capitalize;
+  }
+}

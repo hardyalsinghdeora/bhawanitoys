@@ -1,0 +1,19 @@
+
+/*
+ Theme Name:   Bhavani Toys theme
+ Theme URI:    http://bhavanitoys.in/
+ Description:  Bhavani Toys Theme
+ Author:       Hardyal Singh
+ Author URI:   http://bhavanitoys.in/ Version:      1.0.0
+ Template:     storefront
+ Description:  This is a bhawani-toys child theme for WooThemes StoreFront theme 
+ Version:      1.0.0
+ Tags:         Bhavani, toys, BHavani-toys
+ Text Domain:  Bhavani Toys theme
+*/
+  
+/* Theme customization starts here
+-------------------------------------------------------------- */
+@import url("assets/css/bootstrap.min.css");
+@import url("assets/css/bootstrap-theme.min.css");
+@import url("assets/css/style.css");
